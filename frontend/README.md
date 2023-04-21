@@ -9,5 +9,6 @@ Realtime Chat-app
 🥝 Socket-IO - Real-time chat app
 🥝 Hosting - AWS - Amplify
 🥝 Postman - API requests
+🥝 Axios - API requests Cruds
 🥝 Vite
 🥝 Pnpm
