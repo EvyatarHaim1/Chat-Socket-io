@@ -4,6 +4,7 @@ const { chats } = require('./data/data');
 const userRoutes = require('./routes/userRoutes')
 var cors = require('cors');
 const connectDB = require('./config/db');
+const { notFound, errorHandler } = require('./middlewares/errorMiddleware')
 
 dotenv.config();
 connectDB()
@@ -27,6 +28,9 @@ app.get('/api/chat/:id', (req, res) => {
 })
 
 app.use('/api/user', userRoutes)
+
+app.use(notFound)
+app.use(errorHandler)
 
 const PORT = process.env.PORT || 4000;
 

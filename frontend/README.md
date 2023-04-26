@@ -9,6 +9,8 @@ Realtime Chat-app
 🥝 Socket-IO - Real-time chat app
 🥝 Hosting - AWS - Amplify
 🥝 Postman - API requests
+🥝 Cloudinary - Storage for user images
+🥝 LocalStorage - Storage user info
 🥝 Axios - API requests Cruds
 🥝 bcrypt - crypt user's password
 🥝 Vite
