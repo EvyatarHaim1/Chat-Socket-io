@@ -37,10 +37,21 @@ const authUser = asyncHandler(async (req, res) => {
     const { email, password } = req.body;
 
     const user = await User.findOne(email);
-    // if (user && ()) {
-    //     res.send
-    // }
+
+    if (user && (await User.matchPassword(password))) {
+        res.json({
+            _id: user._id,
+            name: user.name,
+            email: user.email,
+            pic: user.pic,
+            token: generateToken(user._id)
+        })
+    } else {
+        res.status(401);
+        throw new Error('Failed to create the user')
+
+    }
 })
 
-module.exports = { registerUser }
+module.exports = { registerUser, authUser }
 

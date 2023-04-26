@@ -10,5 +10,6 @@ Realtime Chat-app
 🥝 Hosting - AWS - Amplify
 🥝 Postman - API requests
 🥝 Axios - API requests Cruds
+🥝 bcrypt - crypt user's password
 🥝 Vite
 🥝 Pnpm
